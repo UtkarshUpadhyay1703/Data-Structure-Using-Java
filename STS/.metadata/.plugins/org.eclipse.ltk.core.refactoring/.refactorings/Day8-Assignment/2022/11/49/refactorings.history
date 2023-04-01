@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;infixToPostfix.TnfixToPostfix.java&apos; to &apos;InfixToPostfix.java&apos;&#x0D;&#x0A;- Original project: &apos;Day8-Assignment&apos;&#x0D;&#x0A;- Original element: &apos;infixToPostfix.TnfixToPostfix.java&apos;&#x0D;&#x0A;- Renamed element: &apos;infixToPostfix.InfixToPostfix.java&apos;" description="Rename compilation unit &apos;TnfixToPostfix.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;infixToPostfix{TnfixToPostfix.java" name="InfixToPostfix.java" references="false" stamp="1669740938058" version="1.0"/>
+</session>

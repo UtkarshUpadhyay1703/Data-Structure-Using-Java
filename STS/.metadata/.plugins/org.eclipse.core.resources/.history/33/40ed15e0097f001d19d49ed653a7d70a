@@ -1,0 +1,11 @@
+package hashing;
+
+public class Hash {
+	private int[] arr;
+	public Hash(int size) {
+		arr=new int[size];
+	}
+	public int hashIndex(int data) {
+		int index=data%size;
+	}
+}

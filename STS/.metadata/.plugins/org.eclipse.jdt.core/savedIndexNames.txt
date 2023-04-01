@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+D:\Data Structures\Algorithms and DS by Vishal Jagtap Sir\Git\Data-Structure-Using-Java\STS\.metadata\.plugins\org.eclipse.jdt.core
+2575114273.index
+1630848554.index
+3338408835.index
+1865797976.index
+945978907.index
+1846223236.index
+363605925.index
+4109303007.index
+4237329545.index
+751565794.index
+227146537.index
+2337261459.index

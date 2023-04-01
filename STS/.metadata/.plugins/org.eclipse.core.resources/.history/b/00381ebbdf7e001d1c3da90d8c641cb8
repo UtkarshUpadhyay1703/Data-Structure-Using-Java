@@ -1,0 +1,191 @@
+package worker;
+
+import all.Books;
+import all.Sorting;
+import dll.DLL;
+import all.CircularQueue;
+import all.GenericDoublyEndedStack;
+import all.GenericQueue;
+import all.GenericStack;
+import exception.ExceptionHeandling;
+import sll.SLL;
+
+public class Main {
+
+	public static void main(String[] args) throws ExceptionHeandling {
+//		GenericStack<String> stack=new GenericStack<String>(10);
+//		System.out.println(stack.push("ghj"));
+//		System.out.println(stack.peek());
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.peek());
+//		System.out.println(stack.push("vbn"));
+//		System.out.println(stack.peek());
+//		System.out.println(stack.isEmpty());
+//		System.out.println(stack.pop());
+//		System.out.println(stack.peek());
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.push("yui"));
+//		System.out.println(stack.isFull());
+
+//		GenericDoublyEndedStack<Integer> dStack=new GenericDoublyEndedStack<Integer>(5);
+//		System.out.println(dStack.pushFront(3));
+//		System.out.println(dStack.peekFront());
+//     	System.out.println(dStack.pushFront(5));
+//		System.out.println(dStack.peekFront());
+//		System.out.println(dStack.pushEnd(7));
+//		System.out.println(dStack.peekFront());
+//		System.out.println(dStack.pushEnd(8));
+
+//		GenericQueue<Integer> queue=new GenericQueue<Integer>(5);
+//		System.out.println(queue.isEmpty());
+//		System.out.println(queue.enqueue(10));
+//		System.out.println(queue.peek());
+//		System.out.println(queue.enqueue(20));
+//		System.out.println(queue.enqueue(30));
+//		System.out.println(queue.peek());
+//		System.out.println(queue.dequeue());
+//		System.out.println(queue.enqueue(40));
+//		System.out.println(queue.peek());
+
+//		CircularQueue<Integer> cqueue=new CircularQueue<Integer>(5);
+//		System.out.println(cqueue.isEmpty());
+//		System.out.println(cqueue.enqueue(1));
+//		cqueue.display();
+//		System.out.println(cqueue.enqueue(2));
+//		cqueue.display();
+//		System.out.println(cqueue.enqueue(3));
+//		cqueue.display();
+//		System.out.println(cqueue.enqueue(4));
+//		cqueue.display();
+//		System.out.println(cqueue.enqueue(5));
+//		System.out.println(cqueue.isFull());
+//		cqueue.display();
+
+//		GenericQueue<Books> bookqueue=new GenericQueue(5);
+//		//public Books(String name,int price,String author) 
+//		System.out.println(bookqueue.isEmpty());
+//		bookqueue.enqueue(new Books("gooli", 521, "sdryuio"));
+//		System.out.println(bookqueue.peek().getName()+bookqueue.peek().getPrice()+bookqueue.peek().getAuthor());
+//		bookqueue.enqueue(new Books("rfgh", 52851, "polkj"));
+//		System.out.println(bookqueue.peek().getPrice());
+//		bookqueue.enqueue(new Books("aas", 54, ";lkj"));
+//		System.out.println(bookqueue.peek());
+//		bookqueue.enqueue(new Books("ytrd", 58, "juhygtfr"));
+//		System.out.println(bookqueue.peek());
+//		bookqueue.enqueue(new Books("vcx", 8574, "juhygtf"));
+//		System.out.println(bookqueue.dequeue());
+//		System.out.println(bookqueue.peek());
+
+//		SLL<Integer> sll=new SLL<>();
+//		sll.insertAtBeginning(1);
+//		sll.insertAtEnd(2);
+//		sll.insertAtPosition(3, 1);
+////		sll.display();
+////		sll.deleteFromBeginning();
+////		sll.display();
+////		sll.deleteFromEnd();
+////		sll.display();
+////		sll.deleteFromPosition(3);
+////		sll.display();
+////		sll.deleteByValue(3);
+//		sll.display();
+////		sll.displayMiddleElement();
+////		System.out.println(sll.search(4));
+
+//		Sorting bs=new Sorting();
+//		int[] arr= {1,4,5,2,3,8,6};
+//		int [] arrnew=bs.bubbleSort(arr);
+//		for(int n:arrnew) {
+//			System.out.print(n+"  ");
+//		}
+
+//		Sorting is=new Sorting();
+//		int[] arr= {1,4,5,2,3,8,6};
+//		int[] arrnew=is.insertion(arr);
+//		for(int a:arrnew) {
+//			System.out.print(a+"  ");
+//		}
+
+//		Sorting ss=new Sorting();
+//		int[] arr= {1,4,5,2,3,8,6};
+//		int[] arrnew=ss.selectionSort(arr);
+//		for(int a:arrnew) {
+//		System.out.print(a+"  ");
+//	}
+
+//		SLL<Integer> sll=new SLL<>();
+//		sll.insertAtBeginning(1);
+//		sll.insertAtBeginning(5);
+//		sll.insertAtBeginning(3);
+//		sll.insertAtBeginning(4);
+//		sll.insertAtBeginning(2);
+//		sll.display();
+//		sll.sorting();
+//		sll.display();
+
+//		
+//		DLL dll=new DLL();
+//		dll.insertAtBeginning(0);
+//		dll.display();
+//		dll.insertAtBeginning(5);
+//		dll.insertAtBeginning(2);
+//		dll.insertAtBeginning(1);
+//		dll.display();
+//		dll.insertAtEnd(10);
+//		dll.insertAtEnd(11);
+//		dll.display();
+//		dll.insertAtPosition(55, 1);
+//		dll.insertAtPosition(23, 5);
+//		dll.display();
+//		dll.deleteAtEnd();
+//		dll.deleteAtEnd();
+//		dll.display();
+//		dll.deleteFromBeginning();
+//		dll.deleteFromBeginning();
+//		dll.display();
+//		dll.deleteAtPosition(1);
+//		dll.deleteAtPosition(3);
+//		dll.display();
+//		dll.deleteByValue(23);
+//		dll.display();
+
+//		SLL<Integer> sll = new SLL<>();
+////		sll.insertAtBeginning(10);
+////		sll.insertAtEnd(10);
+////		sll.insertAtBeginning(20);
+////		sll.insertAtEnd(20);
+////		sll.display();
+////		sll.isPalandrome();
+//		sll.insertAtBeginning(3);
+//		sll.insertAtBeginning(1);
+//		sll.insertAtBeginning(2);
+//		sll.insertAtBeginning(5);
+//		sll.insertAtBeginning(4);
+//		sll.display();
+//		sll.reverse();
+//		sll.display();
+//		sll.sortDescending();
+//		sll.display();
+//		sll.deleteAlternateNode();
+//		sll.display();
+
+		
+		Sorting sort=new Sorting();
+		int[] arr= {1,2,5,4,3};
+//		sort.mergeSort(arr, 0, arr.length-1);
+//		sort.quickSort(arr, 0, arr.length-1);
+//		sort.bubbleSort(arr);
+		sort.selectionSort(arr);
+		for(int a:arr) {
+			System.out.print(a);
+		}
+		
+	}
+
+}

@@ -1,0 +1,64 @@
+package com.bst;
+
+import java.util.Stack;
+
+public class BST {
+	Node root;
+	
+	public boolean insert (int data) {
+		Node newNode = new Node(data);
+		if(root == null) {
+			root = newNode;
+			return true;
+		}
+		
+		Node temp = root;
+		while(true) {
+			if(temp.getData() == data) {
+				return false;
+			}
+			
+			if(temp.getData() > data) {
+				if(temp.getLeft()==null) {
+					temp.setLeft(newNode);
+					return true;
+				}
+				temp = temp.getLeft();
+			}
+			else {
+				if(temp.getRight() == null) {
+					temp.setRight(newNode);
+					return true;
+				}
+				temp = temp.getRight();
+			}
+		}
+	}
+	
+	public void preOrder() {
+		Stack<Node> stack = new Stack<>();
+		Node temp = root;
+		
+		while(temp!=null && !stack.isEmpty()) {
+			while(temp!=null) {
+				System.out.print(temp.getData()+" ");
+				stack.push(temp);
+				temp = temp.getLeft();
+			}
+			temp = stack.pop();
+			temp = temp.getRight();
+		}
+	}
+	
+	public void inOrder() {
+		Stack<Node> stack = new Stack<>();
+		Node temp = root;
+		
+		while(temp!=null && !stack.isEmpty()) {
+			while(temp!=null) {
+				stack.push(temp);
+				temp = temp
+			}
+		}
+	}
+}

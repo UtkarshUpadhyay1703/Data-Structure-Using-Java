@@ -1,0 +1,82 @@
+package graph;
+
+import java.util.Stack;
+
+import all.GenericStack;
+
+public class Graph {
+	private int noOfVertex;
+	private int[] vertices;
+	private int[][] adjMat;
+	public Graph(int noOfVertex) {
+		this.noOfVertex=noOfVertex;
+		vertices=new int[noOfVertex];
+		adjMat=new int[noOfVertex][noOfVertex];
+		init();
+	}
+	public void init() {
+		//to store the values of vertices
+		for(int i=0;i<noOfVertex;i++) {
+			vertices[i]=i+1;
+		}
+		//to store the values of adjcent matrix
+		int[] arr= {0,1,1,0,1,0,1,0,1,1,0,1,0,0,1,0};
+		int k=0;
+		for(int i=0;i<noOfVertex;i++) {
+			for(int j=0;j<noOfVertex;j++) {
+			adjMat[i][j]=arr[k++];
+			}
+		}	
+	}
+	
+	public void display() {
+		System.out.println();
+		for(int i=0;i<noOfVertex;i++) {
+			for(int j=0;j<noOfVertex;j++) {
+			System.out.print(adjMat[i][j]);
+			}
+			System.out.println();
+		}
+		System.out.println();
+	}
+	
+	public void dfs(int startIndex) {
+		Stack<Integer> stack=new Stack<Integer>();
+		int[] visited=new int[noOfVertex];
+		int d=startIndex;
+		System.out.println(vertices[d]);
+		visited[d]=1;
+		stack.push(d);
+		while(!stack.empty()) {
+			for(int i=0;i<noOfVertex;i++) {
+				if(visited[i]==0 && adjMat[d][i]==1) {
+					System.out.println(vertices[i]);
+					visited[i]=1;
+					stack.push(i);
+				}
+			}
+			d=stack.pop();
+		}
+		System.out.println();
+	}
+	
+	public void bfs(int startIndex) {
+		int[] queue=new int[100];
+		int front=-1,rear=-1;
+		int [] visited=new int[noOfVertex];
+		queue[++rear]=startIndex;
+		front=rear=0;
+		while(front<=rear) {
+			int d=queue[front++];
+			if(visited[d]==0) {
+				System.out.println(vertices[d]);
+			}
+			for(int i=0;i<noOfVertex;i++) {
+				if(visited[i]==0 && adjMat[d][i]==1) {
+					queue[++rear]=i;
+				}
+			}
+		}
+	}
+	
+}

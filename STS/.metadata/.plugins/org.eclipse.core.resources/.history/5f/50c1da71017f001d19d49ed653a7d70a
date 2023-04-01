@@ -1,0 +1,7 @@
+package circularQueueUsingLL;
+
+public class CircularQueueUsingLL {
+	private Node next;
+	private int data;
+	
+}

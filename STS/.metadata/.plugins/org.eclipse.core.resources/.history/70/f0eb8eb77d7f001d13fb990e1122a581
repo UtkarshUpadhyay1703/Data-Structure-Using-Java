@@ -1,0 +1,9 @@
+package com.bst;
+
+public class BST {
+	Node root;
+	
+	public boolean insert(int data) {
+		
+	}
+}

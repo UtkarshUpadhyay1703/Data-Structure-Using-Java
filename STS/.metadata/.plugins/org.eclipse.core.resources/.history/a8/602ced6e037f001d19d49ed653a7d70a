@@ -1,0 +1,11 @@
+package circularQueueUsingLL;
+
+public class CQULLTester {
+
+	public static void main(String[] args) {
+		CircularQueueUsingLL queue=new CircularQueueUsingLL();
+		
+
+	}
+
+}

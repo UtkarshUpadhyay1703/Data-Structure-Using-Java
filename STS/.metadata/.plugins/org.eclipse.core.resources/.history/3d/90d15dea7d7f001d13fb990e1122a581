@@ -1,0 +1,13 @@
+package com.bst;
+
+public class BST {
+	Node root;
+	
+	public boolean insert(int data) {
+		Node newNode = new Node(data);
+		if(root == null) {
+			root = newNode;
+			return true;
+		}
+	}
+}

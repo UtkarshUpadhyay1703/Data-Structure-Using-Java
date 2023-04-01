@@ -1,0 +1,10 @@
+package hashing;
+
+public class Hash {
+	private int[] arr;
+	private Node head;
+	public Hash(int size) {
+		arr=new int[size];
+	}
+	public 
+}

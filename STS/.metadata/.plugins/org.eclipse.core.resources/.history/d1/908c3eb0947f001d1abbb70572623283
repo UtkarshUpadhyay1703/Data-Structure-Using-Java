@@ -1,0 +1,7 @@
+package circularDLL;
+
+public class Node<T> {
+	private T data;
+	private Node prev;
+	private Node next;
+}

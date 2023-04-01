@@ -1,0 +1,19 @@
+package com.bst;
+
+public class Main {
+	public static void main() {
+		BST bst = new BST();
+		bst.insert(21);
+		bst.insert(15);
+		bst.insert(13);
+		bst.insert(9);
+		bst.insert(28);
+		bst.preOrder();
+		
+		System.out.println();
+		bst.inOrder();
+		
+		System.out.println();
+		bst.postOrder();
+	}
+}

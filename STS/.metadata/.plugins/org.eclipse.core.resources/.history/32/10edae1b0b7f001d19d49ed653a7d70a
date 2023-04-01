@@ -1,0 +1,22 @@
+package hashing;
+
+public class Hash {
+	private Node[] arr;
+	private int size;
+	public Hash(int size) {
+		this.size=size;
+		arr=new int[size];
+	}
+	public int hashIndex(int data) {
+		int index=data%size;
+		return index;
+	}
+	public void insert(int data) {
+		Node newNode=new Node(data);
+		Node temp;
+		int index=hashIndex(data);
+		if(arr[index]==0) {
+			
+		}
+	}
+}

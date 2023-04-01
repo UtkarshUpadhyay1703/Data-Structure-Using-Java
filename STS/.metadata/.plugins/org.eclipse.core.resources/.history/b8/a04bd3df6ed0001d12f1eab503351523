@@ -1,0 +1,27 @@
+package paranthisi_tester;
+
+import java.util.Scanner;
+
+import day1_assignment_classGenericStack.BusinessLogic;
+
+public class Test {
+
+	public static void main(String[] args) {
+		try(Scanner sc=new Scanner(System.in)){
+			BusinessLogic<Character> stack=new BusinessLogic<>();
+			System.out.println("Enter String");
+			String str=sc.next();
+			int i=0;
+			while(i<str.length()) {
+				if(str.charAt(i)==stack.peek()) {
+					
+				}
+				stack.push();
+				i++;
+			}
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.bst;
+
+public class BST {
+	Node root;
+	
+	public boolean insert (int data) {
+		Node newNode = new Node(data);
+		if(root == null) {
+			root = newNode;
+			return true;
+		}
+		
+		Node temp = root;
+		while(true) {
+			if(temp.getData() == data) {
+				return false;
+			}
+			
+			if(temp.getData() > data) {
+				if(temp.getLeft()==null) {
+					temp.setLeft(newNode);
+					return true;
+				}
+				temp = temp.getLeft();
+			}
+			else {
+				if(temp.getRight() == null) {
+					temp.setRight(newNode);
+					return true;
+				}
+				temp = temp.getRight();
+			}
+		}
+	}
+}

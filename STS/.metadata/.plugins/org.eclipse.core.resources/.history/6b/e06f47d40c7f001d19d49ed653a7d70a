@@ -1,0 +1,11 @@
+package hashing;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Hash hash=new Hash(10);
+		
+
+	}
+
+}

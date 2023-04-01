@@ -1,0 +1,20 @@
+package hashing;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Hash hash=new Hash(10);
+		hash.insert(10);
+		hash.insert(20);
+		hash.insert(11);
+		hash.insert(15);
+		hash.insert(18);
+		hash.insert(28);
+		hash.insert(25);
+		hash.insert(38);
+		hash.insert(35);
+		hash.insert(101);
+
+	}
+
+}

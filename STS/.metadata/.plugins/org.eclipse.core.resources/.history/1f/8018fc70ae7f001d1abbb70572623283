@@ -1,0 +1,13 @@
+package circularDLL;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		CircularDLL<Product> cdll=new CircularDLL<>();
+		cdll.insertAtEnd(new Product(1, "Sahas", 10, 500));
+		cdll.insertAtEnd(new Product(1, "Sahas", 10, 500));
+		cdll.toString();
+		cdll.displayReverse();
+	}
+
+}

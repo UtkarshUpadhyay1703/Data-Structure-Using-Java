@@ -1,0 +1,17 @@
+package graph;
+
+public class Graph {
+	private int noOfVertex;
+	private int[] vertices;
+	private int[][] adjMat;
+	public Graph(int noOfVertex) {
+		this.noOfVertex=noOfVertex;
+		vertices=new int[noOfVertex];
+		adjMat=new int[noOfVertex][noOfVertex];
+		init();
+	}
+	public void init() {
+		
+	}
+	
+}

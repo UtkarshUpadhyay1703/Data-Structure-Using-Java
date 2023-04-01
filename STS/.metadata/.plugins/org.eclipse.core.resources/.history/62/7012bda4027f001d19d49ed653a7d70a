@@ -1,0 +1,28 @@
+package circularQueueUsingLL;
+
+public class CircularQueueUsingLL {
+	private Node head;
+
+	public Node getHead() {
+		return head;
+	}
+
+	public void setHead(Node head) {
+		this.head = head;
+	}
+	
+	public boolean insert(int data) {
+		Node newNode=new Node(data);
+		if(head==null) {
+			head=newNode;
+			return true;
+		}
+		Node temp=head;
+		while(temp.getNext()!=head) {
+			temp=temp.getNext();
+		}
+		
+		
+	}
+
+}

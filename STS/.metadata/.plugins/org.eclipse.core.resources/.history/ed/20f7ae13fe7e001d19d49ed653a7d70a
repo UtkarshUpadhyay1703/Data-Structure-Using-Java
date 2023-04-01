@@ -1,0 +1,64 @@
+package infixToPrifix;
+
+import exception.ExceptionHandling;
+import genericStack.Stack;
+
+public class InfixToPrifix {
+	public int prcedence(char ch) {
+		if (ch == '+' || ch == '-')
+			return 1;
+		else if (ch == '*' || ch == '/')
+			return 2;
+		else if (ch == '(')
+			return 3;
+		return -1;
+	}
+
+	public void infixToPrifix(String str) throws ExceptionHandling {
+		StringBuilder sb = new StringBuilder(str);// Not for bracket as input
+		str = sb.reverse().toString();
+		char[] arr = str.toCharArray();
+		Stack<Character> stack = new Stack<>(10);
+		String answer = "";
+		char ch;
+		int i = 0;
+		while (i < arr.length) {
+			if (arr[i] == '+' || arr[i] == '-' || arr[i] == '*' || arr[i] == '/' || arr[i] == '(' || arr[i] == ')') {
+				if (stack.isEmpty())
+					stack.push(arr[i]);
+				else {
+					ch = stack.pop();
+					if (prcedence(ch) < prcedence(arr[i])) {
+						stack.push(ch);
+						stack.push(arr[i]);
+					} else if (prcedence(arr[i]) < 0) {
+						char pop = stack.pop();
+						while (pop != '(') {
+							answer = answer + pop;
+							pop = stack.pop();
+						}
+					} else {
+						while (prcedence(arr[i]) <= prcedence(ch) && !stack.isEmpty()) {
+							answer = answer + ch;
+							ch = stack.pop();
+						}
+						if (prcedence(arr[i]) > prcedence(ch))
+							stack.push(ch);
+						else
+							answer = answer + ch;
+						stack.push(arr[i]);
+					}
+				}
+			} else {
+				answer = answer + arr[i];
+			}
+			i = i + 1;
+		}
+		while (!stack.isEmpty()) {
+			answer = answer + stack.pop();
+		}
+		sb = new StringBuilder(answer);
+		str = sb.reverse().toString();
+		System.out.println(str);
+	}
+}
